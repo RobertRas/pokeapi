@@ -11,7 +11,7 @@ $url_lista = "https://pokeapi.co/api/v2/pokemon/?limit=$limite";
 $resposta_lista = file_get_contents($url_lista);
 
 // converte o json em um array do PHP
-// o parametro "true" faz com que o array seja associativo ao inves de objetos
+// o parametro "true" faz com que o array seja associativo(ou seja, chave : valor)  ao inves de objetos
 $listagem = json_decode($resposta_lista, true);
 
 // crio um array vazio
